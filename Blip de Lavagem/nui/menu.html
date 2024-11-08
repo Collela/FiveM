@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu de Lavagem de Dinheiro</title>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-items">
+            <div class="menu-item" onclick="selectItem('dollars')">
+                <img src="./images/dollars2.png" alt="Dinheiro Sujo">
+                <span>Dinheiro Sujo</span>
+            </div>
+            <div class="menu-item" onclick="selectItem('dollars')">
+                <img src="./images/dollars2.png" alt="Dinheiro Sujo">
+                <span>Item provisorios</span>
+            </div>
+            <div class="menu-item" onclick="selectItem('dollars')">
+                <img src="./images/dollars2.png" alt="Dinheiro Sujo">
+                <span>Item provisorios</span>
+            </div>  
+        </div>
+        <div class="menu-preview">
+            <img src="./images/dollars.png" alt="Dinheiro Limpo">
+            <h2>Lavagem de Dinheiro</h2>
+            <div class="quantity-input">
+                <label for="quantidade">Quantidade de Dinheiro Sujo:</label>
+                <input type="number" id="quantidade" min="1" placeholder="Ex.: 1000">
+            </div>
+        </div>
+        <div class="menu-footer">
+            <button onclick="lavarDinheiro()">LAVAR DINHEIRO</button>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
